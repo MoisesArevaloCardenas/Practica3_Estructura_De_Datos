@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ec.edu.ups.practica3estructuradedatos.modelo;
+package ec.edu.ups.practica3estructuradedatos.models;
 
 /**
  *
@@ -19,7 +19,7 @@ public class Node {
         left = null;
         right = null;
     }
-    
+
     public Contacto getContacto() {
         return contacto;
     }
@@ -30,6 +30,18 @@ public class Node {
 
     public Node getRight() {
         return right;
+    }
+
+    public void setContacto(Contacto contacto) {
+        this.contacto = contacto;
+    }
+
+    public void setLeft(Node left) {
+        this.left = left;
+    }
+
+    public void setRight(Node right) {
+        this.right = right;
     }
 
 }
